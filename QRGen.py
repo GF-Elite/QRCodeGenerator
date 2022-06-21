@@ -43,7 +43,7 @@ if option == "01" or option == "1":
         img.save("qrcode.png")
         print("Successfully saved at: qrcode.png")
     else: 
-        for i in range(int(times)):
+        for i in range(times):
             website=input("Please enter the link for the number "+str(i + 1)+" QR code: ")
             time.sleep(2)
             link=""+str(website)
