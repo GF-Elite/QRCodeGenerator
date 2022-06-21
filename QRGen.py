@@ -26,6 +26,10 @@ while option != "01" and option != "1" and option != "02" and option != "2":
     choice=input("[::] Please enter again: ")
 if option == "01" or option == "1":
     times=int(input("How many QR codes do you want to make ? "))
+    while times < 0:
+        print("Invalid number !")
+        time.sleep(1)
+        times=int(input("Please enter again: "))
     if times == 1:
         website=input("Please enter the link for the QR code: ")
         time.sleep(2)
