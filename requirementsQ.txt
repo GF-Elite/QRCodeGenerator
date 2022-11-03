@@ -1,2 +1,1 @@
-qrcode
-time
+qrcode == 7.3.1
